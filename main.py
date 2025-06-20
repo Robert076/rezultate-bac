@@ -10,7 +10,7 @@ try:
     while True:
         x = requests.get('https://bacalaureat.edu.ro/RapoarteCautare.aspx')
         
-        if x.status_code != '200':
+        if x.status_code != 200:
             print(f"{BColors.INCORRECT}Status: {x.status_code} Not Found{BColors.NORMAL}")
         else:
             print(f"{BColors.CORRECT}Status: {x.status_code} OK{BColors.NORMAL}")
