@@ -8,7 +8,7 @@ class BColors:
 
 try:
     while True:
-        x = requests.get('https://bacalaureat.edu.ro/2025/rapoarte/rezultate/frame.html')
+        x = requests.get('https://bacalaureat.edu.ro/RapoarteCautare.aspx')
         
         if x.status_code != '200':
             print(f"{BColors.INCORRECT}Status: {x.status_code} Not Found{BColors.NORMAL}")
